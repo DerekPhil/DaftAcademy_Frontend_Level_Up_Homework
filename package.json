@@ -1,0 +1,40 @@
+{
+  "name": "zadanie-daftacademy",
+  "version": "1.0.0",
+  "description": "Homework task from DaftAcademy course",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerekPhil/DaftAcademy_Frontend_Level_Up_Homework.git"
+  },
+  "keywords": [
+    "DaftAcademy",
+    "homework",
+    "project"
+  ],
+  "author": "DerekPhil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DerekPhil/DaftAcademy_Frontend_Level_Up_Homework/issues"
+  },
+  "homepage": "https://github.com/DerekPhil/DaftAcademy_Frontend_Level_Up_Homework#readme",
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}
