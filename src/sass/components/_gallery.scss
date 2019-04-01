@@ -1,0 +1,34 @@
+.menu {
+    @include flexRowSpaceAroundWrap();
+    min-height: 100vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #555;
+    }
+    &__product {
+        width: $square-size-20;
+        height: $square-size-20;
+        margin-top: 3%;
+        @for $i from 1 to $product-number {
+            &--#{$i} {
+                background: url("/src/images/product#{$i}.jpg") center no-repeat;
+                background-size: cover;
+            }
+        }
+        &--active {
+            border: 5px $color-orange-light solid;
+        }
+    }
+}

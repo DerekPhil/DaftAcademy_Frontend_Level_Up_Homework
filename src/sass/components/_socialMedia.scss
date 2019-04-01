@@ -1,0 +1,8 @@
+.media {
+    flex-basis: 100%;
+    text-align: right;
+    &__icon {
+        margin: 0 1%;
+        color: $color-purple-light;
+    }
+}

@@ -1,0 +1,5 @@
+.footer {
+    @include flexRowSpaceBetween();
+    padding: $medium-padding;
+    color: $color-gray-light;
+}

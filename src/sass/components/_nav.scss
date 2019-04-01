@@ -1,0 +1,15 @@
+.nav {
+    color: $color-blue-green-light;
+    width: 100%;
+    &__list {
+        @include flexRowSpaceAround();
+        &__item {
+            padding: 3vh 3vh;
+            cursor: pointer;
+            &--active {
+                color: $color-black;
+                border-bottom: 1px $color-black solid;
+            }
+        }
+    }
+}

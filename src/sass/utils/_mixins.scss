@@ -1,0 +1,30 @@
+@mixin flexCol {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexRowSpaceAroundWrap {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-flow: row wrap;
+}
+
+@mixin flexRowSpaceAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin flexRowSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
