@@ -16,7 +16,7 @@
         transform: translateY(-50%);
         background-color: transparent;
         border: 2px $color-black solid;
-        font-size: 1.5rem;
+        font-size: $size-1-half-rem;
         padding: $small-padding;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }

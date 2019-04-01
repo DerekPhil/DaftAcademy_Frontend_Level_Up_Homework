@@ -4,7 +4,7 @@
     &__list {
         @include flexRowSpaceAround();
         &__item {
-            padding: 3vh 3vh;
+            padding: $padding-3;
             cursor: pointer;
             &--active {
                 color: $color-black;
