@@ -1,14 +1,51 @@
 .nav {
     color: $color-blue-green-light;
     width: 100%;
+    margin-bottom: 3vh;
+    &__hamburger {
+        display: none;
+    }
     &__list {
         @include flexRowSpaceAround();
+        white-space: nowrap;
         &__item {
-            padding: $padding-3;
+            padding: $padding-vertical;
             cursor: pointer;
             &--active {
                 color: $color-black;
                 border-bottom: 1px $color-black solid;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        @include flexCol();
+        position: relative;
+        top: 0;
+        left: 0;
+        &__hamburger {
+            display: block;
+            font-size: $size-30;
+            align-self: flex-end;
+        }
+        &__list {
+            width: 100%;
+            @include flexCol();
+            position: absolute;
+            top: $size-30;
+            left: 0;
+            z-index: $z-index-1-above;
+            background-color: rgba(255, 255, 255, .8);
+            font-size: $size-1-half-rem;
+            font-weight: bold;
+            color: $color-black;
+            &--sm-hidden {
+                display: none;
+            }
+            &__item {
+                padding: $padding-vertical-sm;
             }
         }
     }

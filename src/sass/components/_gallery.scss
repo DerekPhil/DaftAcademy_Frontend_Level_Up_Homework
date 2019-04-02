@@ -1,13 +1,12 @@
 .menu {
     @include flexRowSpaceAroundWrap();
-    min-height: 100vh;
     overflow-y: scroll;
+    max-height: 500px;
     &::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
         border-radius: 10px;
         background-color: #F5F5F5;
     }
-    
     &::-webkit-scrollbar {
         width: 6px;
         background-color: #F5F5F5;
@@ -19,8 +18,6 @@
     }
     &__product {
         position: relative;
-        width: $square-size-20;
-        height: $square-size-20;
         margin-top: 3%;
         @for $i from 1 to $product-number {
             &--#{$i} {
@@ -40,6 +37,33 @@
         }
         &--active {
             border: 5px $color-orange-light solid;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        &__product {  
+            width: $square-size-20;
+            height: $square-size-20;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .menu {
+        &__product {
+            width: $square-size-30;
+            height: $square-size-30;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu {
+        &__product {
+            width: $square-size-50;
+            height: $square-size-50;
         }
     }
 }

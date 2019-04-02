@@ -6,7 +6,6 @@
     margin: 5vh auto 0;
     width: 100%;
     height: auto;
-    padding: $big-padding;
     @include flexCol();
     &::before {
         content: "d'inks";
@@ -25,5 +24,29 @@
     }
     &__menu {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        padding: $big-padding;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .main {
+        padding: $big-padding-md;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        padding: $big-padding-tablet;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        padding: $big-padding-sm;
     }
 }

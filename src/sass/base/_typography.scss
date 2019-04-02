@@ -6,3 +6,15 @@ body {
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
 }
+
+@media screen and (max-width: 1199px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 12px;
+    }
+}
